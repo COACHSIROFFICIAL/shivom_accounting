@@ -6,23 +6,22 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#eef4ff,#dbe9ff);
-color:#1d3557;
+background:#eef3fb;
+color:#1f2937;
 }
 
 .container{
 max-width:480px;
 margin:30px auto;
-padding:20px;
+padding:18px;
 }
 
 .hero{
-background:#ffffff;
-border-radius:25px;
+background:linear-gradient(135deg,#0b3c6d,#1d5fa8);
 padding:35px 25px;
+border-radius:24px;
 text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,.12);
-margin-bottom:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.18);
 }
 
 .logo{
@@ -30,167 +29,140 @@ width:120px;
 height:120px;
 border-radius:50%;
 object-fit:cover;
-border:5px solid #d4af37;
+border:5px solid #f4b400;
 background:#fff;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-margin-bottom:20px;
+margin-bottom:18px;
 }
 
 .hero h1{
-font-size:34px;
+font-size:30px;
 font-weight:700;
-color:#123d7a;
-margin-bottom:10px;
+color:#fff;
+margin-bottom:8px;
 }
 
 .subtitle{
 font-size:18px;
-color:#555;
-margin-bottom:10px;
+color:#f8f8f8;
+margin-bottom:8px;
 }
 
 .tagline{
-font-size:15px;
-color:#777;
-margin-bottom:25px;
+font-size:14px;
+color:#dbeafe;
 line-height:1.7;
+margin-bottom:25px;
 }
 
 .button-group{
 display:flex;
 flex-direction:column;
-gap:15px;
+gap:14px;
 }
-/* ===========================
-   BUTTONS
-=========================== */
 
 .btn{
 display:flex;
-align-items:center;
 justify-content:center;
-padding:16px;
-border-radius:14px;
+align-items:center;
+padding:15px;
+border-radius:12px;
 text-decoration:none;
-font-size:17px;
+font-size:16px;
 font-weight:600;
-transition:.3s ease;
 color:#fff;
-box-shadow:0 8px 18px rgba(0,0,0,.15);
+transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-4px);
-box-shadow:0 12px 25px rgba(0,0,0,.20);
+transform:translateY(-3px);
 }
 
 .call{
-background:linear-gradient(135deg,#ff9800,#ffb300);
+background:#ff9800;
 }
 
 .whatsapp{
-background:linear-gradient(135deg,#25D366,#1ebd59);
+background:#25D366;
 }
 
 .email{
-background:linear-gradient(135deg,#2196f3,#42a5f5);
+background:#2196F3;
 }
 
 .location{
-background:linear-gradient(135deg,#3f51b5,#5c6bc0);
+background:#6b7280;
 }
 
-
-/* ===========================
-   SERVICES
-=========================== */
-
 .section{
-background:#fff;
-border-radius:22px;
-padding:25px;
 margin-top:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.10);
 }
 
 .section h2{
 text-align:center;
-color:#123d7a;
-font-size:28px;
-margin-bottom:20px;
+font-size:26px;
+color:#0b3c6d;
+margin-bottom:18px;
 }
 
-.service-list{
-display:flex;
-flex-direction:column;
+.service-grid{
+display:grid;
+grid-template-columns:1fr;
 gap:15px;
 }
 
-.service-item{
-background:#f4f8ff;
-padding:16px 18px;
-border-left:5px solid #d4af37;
-border-radius:12px;
+.service-card{
+background:#fff;
+padding:18px;
+border-radius:15px;
 font-weight:600;
 font-size:16px;
+border-left:5px solid #f4b400;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 transition:.3s;
 }
 
-.service-item:hover{
-background:#123d7a;
-color:#fff;
-transform:translateX(8px);
+.service-card:hover{
+transform:translateY(-4px);
+box-shadow:0 12px 25px rgba(0,0,0,.12);
 }
-
-
-/* ===========================
-   FOOTER
-=========================== */
 
 footer{
 margin-top:35px;
+background:#0b3c6d;
+color:#fff;
+padding:25px;
+border-radius:20px;
 text-align:center;
-font-size:14px;
-color:#666;
-line-height:1.8;
+line-height:2;
 }
 
-footer strong{
-color:#123d7a;
+footer h3{
+color:#f4b400;
+margin-bottom:10px;
 }
-
-
-/* ===========================
-   FLOATING WHATSAPP
-=========================== */
 
 .floating-whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
-width:65px;
-height:65px;
+width:60px;
+height:60px;
 background:#25D366;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
 font-size:30px;
-text-decoration:none;
 color:#fff;
-box-shadow:0 8px 25px rgba(0,0,0,.30);
-transition:.3s;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,.30);
 z-index:999;
+transition:.3s;
 }
 
 .floating-whatsapp:hover{
 transform:scale(1.1);
 }
-
-
-/* ===========================
-   MOBILE
-=========================== */
 
 @media(max-width:600px){
 
@@ -199,7 +171,7 @@ padding:15px;
 }
 
 .hero h1{
-font-size:28px;
+font-size:26px;
 }
 
 .logo{
@@ -208,12 +180,11 @@ height:100px;
 }
 
 .section h2{
-font-size:24px;
+font-size:22px;
 }
 
 .btn{
-font-size:16px;
-padding:14px;
+font-size:15px;
 }
 
 }
