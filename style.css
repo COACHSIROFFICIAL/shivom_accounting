@@ -188,3 +188,12 @@ font-size:15px;
 }
 
 }
+.instagram{
+background:linear-gradient(135deg,#E1306C,#C13584,#833AB4);
+color:#fff;
+}
+
+.instagram:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(225,48,108,.35);
+}
