@@ -197,3 +197,12 @@ color:#fff;
 transform:translateY(-3px);
 box-shadow:0 8px 20px rgba(225,48,108,.35);
 }
+.youtube{
+background:#FF0000;
+color:#fff;
+}
+
+.youtube:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(255,0,0,.35);
+}
